@@ -1,11 +1,11 @@
 
 # Mazaady Task Android Application
 
-This project is an Android application built to demonstrate form handling, category and subcategory selection, and localization. The app uses MVVM architecture with Jetpack components, Retrofit for networking, and Dagger Hilt for dependency injection.
+This project is an Android application built to demonstrate form handling, category and subcategory selection. The app uses clean architecture with MVVM architecture with Jetpack components, Retrofit for networking, and Dagger Hilt for dependency injection.
 
 ## Project Overview
 
-The Mazaady Task app allows users to select categories and subcategories from a predefined set and dynamically renders input fields based on the selected category. The app also supports multi-language functionality, with Arabic set as the default language.
+The Mazaady Task app allows users to select categories and subcategories from a predefined set and dynamically renders input fields based on the selected category.
 
 ## Features
 
@@ -16,14 +16,14 @@ The Mazaady Task app allows users to select categories and subcategories from a 
 
 ## Architecture
 
-This project follows the **MVVM (Model-View-ViewModel)** architecture, ensuring a clean separation of concerns and testability.
+This project follows the **Clean Architecture with MVVM (Model-View-ViewModel)** architecture, ensuring a clean separation of concerns and testability.
 
 ### Layers
 
 1. **Model Layer** (`data/`): Handles data operations and defines the data model structure.
    - **Repositories**: Fetch data from the API or other data sources.
    - **Data Models**: Represent the data structure.
-   - **Networking**: Uses Retrofit for network requests.
+   - **Api**: Uses Retrofit for network requests.
 
 2. **ViewModel Layer** (`presentation/viewmodel/`): Manages UI-related data and communicates with the Model layer.
    - **ViewModels**: Expose data to the UI through LiveData.
@@ -36,6 +36,16 @@ This project follows the **MVVM (Model-View-ViewModel)** architecture, ensuring 
 4. **Dependency Injection** (`di/`): Uses Dagger Hilt to inject dependencies across the app.
 
 5. **Utilities Layer** (`util/`): Provides helper functions and data state management.
+
+
+### Benefits of Clean Architecture in This Project
+
+- **Separation of Concerns**: Each layer is responsible for a specific part of the application, such as data handling, business logic, or user interface. This separation makes code easier to maintain and understand.
+- **Testability**: By isolating business logic in use cases and repository classes, the app is easier to test independently of the UI or data sources, leading to more robust unit testing.
+- **Scalability**: Clean Architecture provides a strong foundation for scaling the app. Adding new features or data sources does not affect the core business logic, allowing for modular expansion of the app.
+- **Independence of Frameworks**: Frameworks like Retrofit or Room can be swapped out with minimal impact on the app's core functionality, as dependencies are injected and isolated in specific layers.
+- **Easier Refactoring**: Changes in the UI or data layers require minimal refactoring in the business logic layer. This flexibility makes it simpler to adjust to evolving requirements.
+- **Reusable Components**: Components like use cases and repositories can be reused across different projects or parts of the application, improving development efficiency.
 
 ### Benefits of MVVM in This Project
 
