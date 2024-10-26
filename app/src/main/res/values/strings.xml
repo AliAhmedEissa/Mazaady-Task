@@ -6,4 +6,5 @@
     <string name="submit">Submit</string>
     <string name="this_field_is_required">This field is required</string>
     <string name="server_error">Server Error</string>
+    <string name="second_screen">Second Screen</string>
 </resources>

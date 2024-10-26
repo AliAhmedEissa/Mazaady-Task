@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 import com.mazaady.android_task.R
@@ -17,6 +18,7 @@ import com.mazaady.android_task.presentation.model.PropertyModel
 import com.mazaady.android_task.presentation.view.bottomSheet.OptionsBottomSheet
 import com.mazaady.android_task.presentation.viewmodel.CategoryViewModel
 import com.mazaady.android_task.util.DataState
+import com.mazaady.android_task.util.extention.customNavigate
 import com.mazaady.android_task.util.extention.isEmpty
 import com.mazaady.android_task.util.extention.onDebouncedListener
 import dagger.hilt.android.AndroidEntryPoint
@@ -78,6 +80,10 @@ class FirstFragment : BaseFragment() {
         // Validate and submit form on button click
         binding.submitButton.onDebouncedListener {
             if (validateInputs()) submitForm()
+        }
+
+        binding.secondButton.onDebouncedListener {
+            findNavController().customNavigate(R.id.navigation_second)
         }
 
 
