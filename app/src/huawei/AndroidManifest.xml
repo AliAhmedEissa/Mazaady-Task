@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:node="merge"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA" />
+
+
+    <application>
+
+<!--        <meta-data-->
+<!--            android:name="com.huawei.hms.client.appid"-->
+<!--            android:value="appid=appid" />-->
+
+<!--        &lt;!&ndash; name doesn't change, value = your class fully name spaced&ndash;&gt;-->
+<!--        <meta-data android:name="com.onesignal.NotificationServiceExtension"-->
+<!--            android:value="com.seamlabs.BlueRide.Common.service.NotificationServiceExtension" />-->
+<!--        <meta-data android:name="com.onesignal.NotificationOpened.DEFAULT" android:value="DISABLE" />-->
+
+<!--        <meta-data-->
+<!--            android:name="com.huawei.hms.maps.API_KEY"-->
+<!--            android:value="C01EFE3F4AFE1B7C6CBD7CEC3613063A1109838D9573843878E2691EBDC59293" />-->
+
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Mazaady Task</string>
+    <string name="main_category">Main Category</string>
+    <string name="sub_category">Sub Category</string>
+    <string name="search">  search...</string>
+    <string name="submit">Submit</string>
+    <string name="this_field_is_required">This field is required</string>
+    <string name="server_error">Server Error</string>
+</resources>

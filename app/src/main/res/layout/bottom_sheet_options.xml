@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rounded_top_12"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <!-- Search bar to filter the options -->
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:padding="8dp"
+        tools:text="title"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/img_close"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/img_close"
+        android:layout_width="@dimen/space_9x"
+        android:layout_height="@dimen/space_9x"
+        android:layout_marginEnd="@dimen/space_4x"
+        android:src="@drawable/ic_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txt_title" />
+
+
+    <EditText
+        android:id="@+id/edt_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/space_4x"
+        android:layout_marginTop="@dimen/space_4x"
+        android:background="@drawable/bg_rounded_8"
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:hint="@string/search"
+        android:padding="@dimen/space_2x"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_title" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/optionsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/space_4x"
+        android:layout_marginVertical="@dimen/space_4x"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_min="200dp"
+        app:layout_constraintHeight_max="400dp"
+        android:orientation="vertical"
+        tools:listitem="@layout/item_option"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/edt_search" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

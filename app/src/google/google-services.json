@@ -1,0 +1,191 @@
+{
+  "project_info": {
+    "project_number": "260468705826",
+    "firebase_url": "https://blueride-v2.firebaseio.com",
+    "project_id": "blueride-v2",
+    "storage_bucket": "blueride-v2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260468705826:android:02c8ee3653eef9c05f987b",
+        "android_client_info": {
+          "package_name": "com.seamlabs.BlueRide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "260468705826-ds09l4bmb25taou5ko4aqcen9jubkacn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.seamlabs.BlueRide",
+            "certificate_hash": "a47e09310ca169c7bce8bdd17ac40363ede988f1"
+          }
+        },
+        {
+          "client_id": "260468705826-f71hohu57b1p7d2hdced0rtf050q2pq5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.seamlabs.BlueRide",
+            "certificate_hash": "4146c03f73cc8bd86576c014e10cbf632be2f47a"
+          }
+        },
+        {
+          "client_id": "260468705826-g813e5atjobndmp3if0ccimk34j3dqi8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.seamlabs.BlueRide",
+            "certificate_hash": "1bd1836120d8767e03fc4033a993cf4af6a655b6"
+          }
+        },
+        {
+          "client_id": "260468705826-sqd3mi0e9i03tlknhqu9hqd518a7gf76.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.seamlabs.BlueRide",
+            "certificate_hash": "52a6538227f2de42b8f5d40fb3d02c6360be41e7"
+          }
+        },
+        {
+          "client_id": "260468705826-ermgsb0hmu661th84a6fqaiiieg7b28s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZ2PuWgHz6uY4jjyojOlyepzaQgoF90QQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "260468705826-ermgsb0hmu661th84a6fqaiiieg7b28s.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "260468705826-dt6rfaqea5p05ffck81c8jvrnsum6suu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "amro.blueRide",
+                "app_store_id": "1421352167"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260468705826:android:da8bdb050c634acd5f987b",
+        "android_client_info": {
+          "package_name": "com.seamlabs.BlueRide.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "260468705826-ermgsb0hmu661th84a6fqaiiieg7b28s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZ2PuWgHz6uY4jjyojOlyepzaQgoF90QQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "260468705826-ermgsb0hmu661th84a6fqaiiieg7b28s.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "260468705826-dt6rfaqea5p05ffck81c8jvrnsum6suu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "amro.blueRide",
+                "app_store_id": "1421352167"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260468705826:android:4c61dcb31153adcc5f987b",
+        "android_client_info": {
+          "package_name": "com.seamlabs.BlueRide_DriverApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "260468705826-ermgsb0hmu661th84a6fqaiiieg7b28s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZ2PuWgHz6uY4jjyojOlyepzaQgoF90QQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "260468705826-ermgsb0hmu661th84a6fqaiiieg7b28s.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "260468705826-dt6rfaqea5p05ffck81c8jvrnsum6suu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "amro.blueRide",
+                "app_store_id": "1421352167"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260468705826:android:d3e22d0fc1f88add5f987b",
+        "android_client_info": {
+          "package_name": "com.seamlabs.blueride.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "260468705826-ermgsb0hmu661th84a6fqaiiieg7b28s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZ2PuWgHz6uY4jjyojOlyepzaQgoF90QQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "260468705826-ermgsb0hmu661th84a6fqaiiieg7b28s.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "260468705826-dt6rfaqea5p05ffck81c8jvrnsum6suu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "amro.blueRide",
+                "app_store_id": "1421352167"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

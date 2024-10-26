@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+
+<!--        <service-->
+<!--            android:name=".Common.service.NotificationsMessagingService"-->
+<!--            android:exported="false">-->
+<!--            <intent-filter android:priority="1">-->
+<!--                <action android:name="com.google.firebase.MESSAGING_EVENT" />-->
+<!--            </intent-filter>-->
+<!--        </service>-->
+
+<!--        <meta-data-->
+<!--            android:name="apms_debug_log_enabled"-->
+<!--            android:value="false" />-->
+
+<!--        <activity-->
+<!--            android:name="com.pusher.pushnotifications.reporting.OpenNotificationActivity"-->
+<!--            android:exported="false"-->
+<!--            tools:node="merge" />-->
+
+<!--        <service-->
+<!--            android:name="com.pusher.pushnotifications.fcm.EmptyMessagingService"-->
+<!--            android:exported="false"-->
+<!--            tools:node="merge" />-->
+
+
+
+<!--        <meta-data-->
+<!--            android:name="com.google.android.geo.API_KEY"-->
+<!--            android:value="@string/google_maps_key" />-->
+
+<!--        <meta-data-->
+<!--            android:name="com.google.android.gms.version"-->
+<!--            android:value="@integer/google_play_services_version" />-->
+
+    </application>
+
+</manifest>

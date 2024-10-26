@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Mazaady Task</string>
+    <string name="main_category">الفئة الرئيسية</string>
+    <string name="sub_category">الفئة الفرعية</string>
+    <string name="search"> بحث...</string>
+    <string name="submit">تم</string>
+    <string name="this_field_is_required">هذا الحقل مطلوب</string>
+    <string name="server_error">حدث خطا ما</string>
+</resources>
