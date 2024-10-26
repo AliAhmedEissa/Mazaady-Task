@@ -10,14 +10,6 @@ android {
     namespace 'com.mazaady.android_task'
     compileSdk 34
 
-    signingConfigs {
-        release {
-            storeFile file('/Users/mac/Desktop/Android Projects/Seamlabs/BlueRide/store.jks')
-            storePassword 'xzmir95'
-            keyPassword 'xzmir95'
-            keyAlias 'schoolstorekey'
-        }
-    }
 
     defaultConfig {
         applicationId "com.mazaady.android_task"
@@ -27,7 +19,6 @@ android {
         versionName "1.0"
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        signingConfig signingConfigs.release
     }
 
 
@@ -40,16 +31,8 @@ android {
                 resValue "string", "authority", "com.mazaady.android_task.provider"
                 resValue "string", "app_name", "Mazaady task"
                 manifestPlaceholders = [appIcon: "@drawable/new_icon", appIconRound: "@drawable/new_icon"]
-                buildConfigField("String", "IMAGES_PREFIX_BUS", "\"https://bus.blueride.app:555\"")
-                buildConfigField("String", "BASE_URL", "\"https://backend.blueride.app/api/\"")
-                buildConfigField("String", "IMAGES_PREFIX", "\"https://backend.blueride.app\"")
-                buildConfigField("String", "BUS_BASE_URL", "\"https://bus.blueride.app/api/\"")
-                buildConfigField("String", "PUSHER_INSTANCE_ID", "\"602b2180-d476-4c1f-8ca2-fa42230aaaef\"")
-                buildConfigField("String", "PUSHER_APP_KEY", "\"c9b4f87836c5d3ad204a\"")
-                buildConfigField("String", "PUSHER_INSTANCE_ID_BUS", "\"adce797a-a225-4adc-9194-cbbce6b8ab3f\"")
-                buildConfigField("String", "BUS_CLIENT_ID", "\"8EYHG3MKFGVR9U8MX3864FUWNNXF6FEH\"")
-                buildConfigField("String", "BUS_CLIENT_SECRET", "\"9FU3JV2T6A4MXPFLA29LSWRBFRMDNQUHEVMJZG6BAYJ42D8JGQ7YN7RTF9L6\"")
-                buildConfigField("String", "AMPLITUDE_API_KEY", "\"c92cb9e976fcbff4cc93fc65958402c\"")
+                buildConfigField("String", "BASE_URL", "\"https://staging.mazaady.com/api/v1/\"")
+                buildConfigField("String", "PRIVATE_KEY", "\"3%o8i}_;3D4bF]G5@22r2)Et1&mLJ4?\$@+16\"")
                 proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
 
 
@@ -64,16 +47,8 @@ android {
                 resValue "string", "authority", "com.mazaady.android_task.dev.provider"
                 resValue "string", "app_name", "Mazaady task Dev"
                 manifestPlaceholders = [appIcon: "@drawable/ic_logo_dev", appIconRound: "@drawable/ic_logo_dev"]
-                buildConfigField("String", "BASE_URL", "\"https://development-backend.blueride.app/api/\"")
-                buildConfigField("String", "IMAGES_PREFIX", "\"https://development-backend.blueride.app\"")
-                buildConfigField("String", "IMAGES_PREFIX_BUS", "\"https://dev-bus.blueride.app:555\"")
-                buildConfigField("String", "BUS_BASE_URL", "\"https://dev-bus.blueride.app/api/\"")
-                buildConfigField("String", "PUSHER_INSTANCE_ID", "\"23e1efc9-6ebe-40fa-bd88-f77e525d4308\"")
-                buildConfigField("String", "PUSHER_APP_KEY", "\"bc312a48ec8e2862105a\"")
-                buildConfigField("String", "PUSHER_INSTANCE_ID_BUS", "\"5b559d80-e614-4647-80de-028535e4a9a8\"")
-                buildConfigField("String", "BUS_CLIENT_ID", "\"XWQIZJ9BHFS0CHVM2Y2JRVSV2ZUZCYMG\"")
-                buildConfigField("String", "BUS_CLIENT_SECRET", "\"XPOAKVINGFDG7L6ZQESSEZUXQL7T1SMUVS2GEWKBXWDCLCRGFJOOJIBYEYSK\"")
-                buildConfigField("String", "AMPLITUDE_API_KEY", "\"c92cb9e976fcbff4cc93fc65958402c\"")
+                buildConfigField("String", "BASE_URL", "\"https://staging.mazaady.com/api/v1/\"")
+                buildConfigField("String", "PRIVATE_KEY", "\"3%o8i}_;3D4bF]G5@22r2)Et1&mLJ4?\$@+16\"")
                 proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
 
             }

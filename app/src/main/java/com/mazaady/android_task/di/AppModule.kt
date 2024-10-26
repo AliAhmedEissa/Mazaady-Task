@@ -1,5 +1,6 @@
 package com.mazaady.android_task.di
 
+import com.mazaady.android_task.BuildConfig
 import com.mazaady.android_task.data.api.ApiService
 import com.mazaady.android_task.data.repository.CategoryRepositoryImpl
 import com.mazaady.android_task.domain.repository.CategoryRepository
@@ -19,9 +20,6 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object AppModule {
 
-    private const val BASE_URL = "https://staging.mazaady.com/api/v1/"
-    private const val PRIVATE_KEY = "3%o8i}_;3D4bF]G5@22r2)Et1&mLJ4?\$@+16"  // Replace with actual private key
-
     @Provides
     @Singleton
     fun provideOkHttpClient(): OkHttpClient {
@@ -33,7 +31,7 @@ object AppModule {
         val headerInterceptor = Interceptor { chain ->
             val original: Request = chain.request()
             val requestBuilder: Request.Builder = original.newBuilder()
-                .header("private-key", PRIVATE_KEY)  // Add the private-key header here
+                .header("private-key", BuildConfig.PRIVATE_KEY)  // Add the private-key header here
 
             val request: Request = requestBuilder.build()
             chain.proceed(request)
@@ -49,7 +47,7 @@ object AppModule {
     @Singleton
     fun provideRetrofit(okHttpClient: OkHttpClient): Retrofit {
         return Retrofit.Builder()
-            .baseUrl(BASE_URL)
+            .baseUrl(BuildConfig.BASE_URL)
             .client(okHttpClient)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
