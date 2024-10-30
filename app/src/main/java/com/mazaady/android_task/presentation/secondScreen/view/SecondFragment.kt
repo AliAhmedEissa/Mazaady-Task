@@ -56,7 +56,7 @@ class SecondFragment : BaseFragment() {
         binding.appbar.setupAppBar(
             name = getString(R.string.hello_s, "Ali"),
             points = getString(R.string.s_points, "1600"),
-            leftImageRes = R.drawable.ic_my_photo, // TODO: set this image by glide to be circle
+            leftImageRes = R.drawable.ic_my_photo_circle, // TODO: set this image by glide to be circle
             onLeftImageClick = {
               showToast("on left image click")
             },
