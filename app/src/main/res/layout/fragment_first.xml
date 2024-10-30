@@ -81,12 +81,6 @@
             android:layout_gravity="center_horizontal"
             android:text="@string/submit" />
 
-        <Button
-            android:id="@+id/secondButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="@string/second_screen" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/formFieldsRecyclerView"

@@ -4,6 +4,10 @@ import android.content.Context
 import android.content.res.Configuration
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.mazaady.android_task.databinding.ActivityMainBinding
 import com.mazaady.android_task.util.LoadingViewManager
 import com.mazaady.android_task.util.extention.gone
@@ -22,7 +26,19 @@ class MainActivity : AppCompatActivity(),LoadingViewManager {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        initBottomNavigation()
 
+    }
+
+    private fun initBottomNavigation() {
+        val navView: BottomNavigationView = binding.navView
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.nav_host_fragment_activity_main) as NavHostFragment
+        val navController = navHostFragment.navController
+        navView.setupWithNavController(navController)
+
+        // Optional: Prevent re-selection actions for the BottomNavigationView
+        binding.navView.setOnItemReselectedListener { }
     }
 
     override fun showLoading() {
@@ -34,7 +50,7 @@ class MainActivity : AppCompatActivity(),LoadingViewManager {
     }
 
     override fun attachBaseContext(newBase: Context) {
-        super.attachBaseContext(updateLocale(newBase, Locale("ar")))
+        super.attachBaseContext(updateLocale(newBase, Locale("en")))
     }
 
     private fun updateLocale(context: Context, locale: Locale): Context {

@@ -1,10 +1,10 @@
-package com.mazaady.android_task.presentation.adapter
+package com.mazaady.android_task.presentation.firstScreen.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.mazaady.android_task.databinding.ItemOptionBinding
-import com.mazaady.android_task.presentation.model.PropertyModel
+import com.mazaady.android_task.presentation.firstScreen.model.PropertyModel
 
 class OptionsAdapter(
     private var options: List<PropertyModel>,

@@ -10,7 +10,8 @@ import com.mazaady.android_task.domain.usecase.FetchCategoriesUseCase
 import com.mazaady.android_task.domain.usecase.FetchOptionsUseCase
 import com.mazaady.android_task.domain.usecase.FetchPropertiesUseCase
 import com.mazaady.android_task.domain.usecase.FilterSubCategoriesByCategoryIdUseCase
-import com.mazaady.android_task.presentation.model.PropertyModel
+import com.mazaady.android_task.presentation.firstScreen.model.PropertyModel
+import com.mazaady.android_task.presentation.firstScreen.viewmodel.CategoryViewModel
 import com.mazaady.android_task.util.DataState
 import com.mazaady.android_task.util.getOrAwaitValue
 import io.mockk.coEvery

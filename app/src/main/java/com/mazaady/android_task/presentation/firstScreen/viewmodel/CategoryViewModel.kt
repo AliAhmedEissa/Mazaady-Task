@@ -1,4 +1,4 @@
-package com.mazaady.android_task.presentation.viewmodel
+package com.mazaady.android_task.presentation.firstScreen.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -8,7 +8,7 @@ import com.mazaady.android_task.domain.usecase.FetchCategoriesUseCase
 import com.mazaady.android_task.domain.usecase.FetchOptionsUseCase
 import com.mazaady.android_task.domain.usecase.FetchPropertiesUseCase
 import com.mazaady.android_task.domain.usecase.FilterSubCategoriesByCategoryIdUseCase
-import com.mazaady.android_task.presentation.model.PropertyModel
+import com.mazaady.android_task.presentation.firstScreen.model.PropertyModel
 import com.mazaady.android_task.util.DataState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch

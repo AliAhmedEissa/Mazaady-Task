@@ -1,0 +1,12 @@
+<!-- res/drawable/gradient_blur_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background gradient from bottom to top -->
+    <item>
+        <shape>
+            <gradient
+                android:startColor="@android:color/transparent"
+                android:endColor="#CC000000"
+                android:angle="270" /> <!-- Angle 270 for bottom to top gradient -->
+        </shape>
+    </item>
+</layer-list>

@@ -1,4 +1,4 @@
-package com.mazaady.android_task.presentation.view.bottomSheet
+package com.mazaady.android_task.presentation.firstScreen.view.bottomSheet
 
 import android.app.Dialog
 import android.os.Bundle
@@ -11,8 +11,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.mazaady.android_task.R
 import com.mazaady.android_task.databinding.BottomSheetOptionsBinding
-import com.mazaady.android_task.presentation.adapter.OptionsAdapter
-import com.mazaady.android_task.presentation.model.PropertyModel
+import com.mazaady.android_task.presentation.firstScreen.adapter.OptionsAdapter
+import com.mazaady.android_task.presentation.firstScreen.model.PropertyModel
 import com.mazaady.android_task.util.extention.onDebouncedListener
 
 class OptionsBottomSheet(

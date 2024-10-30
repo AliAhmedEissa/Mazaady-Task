@@ -1,4 +1,4 @@
-package com.mazaady.android_task.presentation.view
+package com.mazaady.android_task.presentation.firstScreen.view
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,12 +11,12 @@ import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 import com.mazaady.android_task.R
 import com.mazaady.android_task.databinding.FragmentFirstBinding
-import com.mazaady.android_task.presentation.adapter.FormFieldAdapter
+import com.mazaady.android_task.presentation.firstScreen.adapter.FormFieldAdapter
 import com.mazaady.android_task.presentation.base.BaseFragment
-import com.mazaady.android_task.presentation.model.FormField
-import com.mazaady.android_task.presentation.model.PropertyModel
-import com.mazaady.android_task.presentation.view.bottomSheet.OptionsBottomSheet
-import com.mazaady.android_task.presentation.viewmodel.CategoryViewModel
+import com.mazaady.android_task.presentation.firstScreen.model.FormField
+import com.mazaady.android_task.presentation.firstScreen.model.PropertyModel
+import com.mazaady.android_task.presentation.firstScreen.view.bottomSheet.OptionsBottomSheet
+import com.mazaady.android_task.presentation.firstScreen.viewmodel.CategoryViewModel
 import com.mazaady.android_task.util.DataState
 import com.mazaady.android_task.util.extention.customNavigate
 import com.mazaady.android_task.util.extention.isEmpty
@@ -81,11 +81,6 @@ class FirstFragment : BaseFragment() {
         binding.submitButton.onDebouncedListener {
             if (validateInputs()) submitForm()
         }
-
-        binding.secondButton.onDebouncedListener {
-            findNavController().customNavigate(R.id.navigation_second)
-        }
-
 
     }
 

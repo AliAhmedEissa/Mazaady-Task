@@ -1,0 +1,5 @@
+<!-- res/drawable/textview_background_selected.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/red_light" />
+    <corners android:radius="@dimen/space_3x" />
+</shape>

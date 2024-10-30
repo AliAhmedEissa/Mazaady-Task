@@ -1,0 +1,5 @@
+<!-- res/drawable/textview_background_selector.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/text_view_background_selected" android:state_selected="true" />
+    <item android:drawable="@drawable/text_view_background_un_selected" android:state_selected="false" />
+</selector>

@@ -7,4 +7,7 @@
     <string name="this_field_is_required">This field is required</string>
     <string name="server_error">Server Error</string>
     <string name="second_screen">Second Screen</string>
+    <string name="upcoming_course_of_this_week"><b>Upcoming</b> course of this week</string>
+    <string name="hello_s">Hello,%s!</string>
+    <string name="s_points">+%s Points</string>
 </resources>

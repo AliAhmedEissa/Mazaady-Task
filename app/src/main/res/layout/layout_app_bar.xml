@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_16x"
+    android:background="@color/white"
+    android:paddingTop="@dimen/space_1x">
+
+    <ImageView
+        android:id="@+id/img_left"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="@dimen/space_3x"
+        android:layout_marginEnd="@dimen/space_3x"
+        android:background="@drawable/bg_rounded_8"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_max="120dp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:maxLines="1"
+        android:paddingStart="@dimen/space_3x"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/img_notification"
+        app:layout_constraintStart_toEndOf="@id/img_left"
+        app:layout_constraintTop_toTopOf="@id/img_left"
+        tools:text="TitleTitle" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt_points"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_1x"
+        android:drawableStart="@drawable/ic_points"
+        android:drawablePadding="@dimen/space_1x"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:maxLines="1"
+        android:paddingStart="@dimen/space_3x"
+        android:paddingEnd="@dimen/space_3x"
+        android:textAlignment="viewStart"
+        android:textColor="@color/yellow"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/img_notification"
+        app:layout_constraintStart_toEndOf="@id/img_left"
+        app:layout_constraintTop_toBottomOf="@id/txt_name"
+        tools:text="TitleTitle" />
+
+
+    <ImageView
+        android:id="@+id/img_notification"
+        android:layout_width="@dimen/space_6x"
+        android:layout_height="@dimen/space_6x"
+        android:layout_marginHorizontal="@dimen/space_6x"
+        android:src="@drawable/ic_notifications_black_24dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/img_notification_count"
+        android:layout_width="@dimen/space_2x"
+        android:layout_height="@dimen/space_2x"
+        android:layout_marginBottom="@dimen/space_4x"
+        android:background="@drawable/bg_rounded_8"
+        android:backgroundTint="@color/red_light"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/img_notification"
+        app:layout_constraintEnd_toEndOf="@id/img_notification"
+        app:layout_constraintTop_toTopOf="@id/img_notification"
+        tools:text="3" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

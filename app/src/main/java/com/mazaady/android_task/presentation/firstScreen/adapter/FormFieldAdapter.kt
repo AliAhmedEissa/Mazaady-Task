@@ -1,10 +1,10 @@
-package com.mazaady.android_task.presentation.adapter
+package com.mazaady.android_task.presentation.firstScreen.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.mazaady.android_task.databinding.ItemFormFieldBinding
-import com.mazaady.android_task.presentation.model.FormField
+import com.mazaady.android_task.presentation.firstScreen.model.FormField
 
 class FormFieldAdapter(private val formFields: List<FormField>) : RecyclerView.Adapter<FormFieldAdapter.FormFieldViewHolder>() {
 

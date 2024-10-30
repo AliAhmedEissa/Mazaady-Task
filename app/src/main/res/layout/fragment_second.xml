@@ -3,17 +3,75 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/text_dashboard"
+    <com.mazaady.android_task.util.view.AppBarComponent
+        android:id="@+id/appbar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/second_screen"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_stories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/space_3x"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/appbar"
+        android:layout_marginTop="@dimen/space_7x"
+        tools:itemCount="3"
+        tools:listitem="@layout/item_story" />
+
+
+    <TextView
+        android:id="@+id/txt_upcoming_courses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_3x"
+        android:layout_marginTop="@dimen/space_6x"
+        android:text="@string/upcoming_course_of_this_week"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rc_stories" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/space_3x"
+        android:layout_marginTop="@dimen/space_4x"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/txt_upcoming_courses"
+        tools:itemCount="3"
+        tools:listitem="@layout/item_category" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_employees"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/space_3x"
+        android:layout_marginTop="@dimen/space_4x"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/rc_categories"
+        tools:itemCount="3"
+        tools:listitem="@layout/item_employee" />
+
+    <LinearLayout
+        android:id="@+id/viewDotsIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/rc_employees" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

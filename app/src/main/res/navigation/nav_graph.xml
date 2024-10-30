@@ -7,12 +7,24 @@
 
     <fragment
         android:id="@+id/navigation_first"
-        android:name="com.mazaady.android_task.presentation.view.FirstFragment"
-        tools:layout="@layout/fragment_first" />
+        android:name="com.mazaady.android_task.presentation.secondScreen.view.SecondFragment"
+        tools:layout="@layout/fragment_second"
+      />
 
     <fragment
         android:id="@+id/navigation_second"
-        android:name="com.mazaady.android_task.presentation.view.SecondFragment"
+        android:name="com.mazaady.android_task.presentation.firstScreen.view.FirstFragment"
+        tools:layout="@layout/fragment_first"
+      />
+
+    <fragment
+        android:id="@+id/navigation_third"
+        android:name="com.mazaady.android_task.presentation.secondScreen.view.SecondFragment"
+        tools:layout="@layout/fragment_second" />
+
+    <fragment
+        android:id="@+id/navigation_fourth"
+        android:name="com.mazaady.android_task.presentation.secondScreen.view.SecondFragment"
         tools:layout="@layout/fragment_second" />
 
 </navigation>
