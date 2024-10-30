@@ -4,20 +4,20 @@
     <item
         android:id="@+id/navigation_first"
         android:icon="@drawable/ic_home"
-        android:title="" />
+        android:title="_" />
 
     <item
         android:id="@+id/navigation_second"
         android:icon="@drawable/ic_disable"
-        android:title="" />
+        android:title="_" />
 
     <item
         android:id="@+id/navigation_third"
         android:icon="@drawable/ic_message"
-        android:title="" />
+        android:title="_" />
 
     <item
         android:id="@+id/navigation_fourth"
         android:icon="@drawable/ic_profile"
-        android:title="" />
+        android:title="_" />
 </menu>

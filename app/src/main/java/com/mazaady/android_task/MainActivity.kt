@@ -8,6 +8,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.bottomnavigation.LabelVisibilityMode
 import com.mazaady.android_task.databinding.ActivityMainBinding
 import com.mazaady.android_task.util.LoadingViewManager
 import com.mazaady.android_task.util.extention.gone
@@ -31,11 +32,12 @@ class MainActivity : AppCompatActivity(),LoadingViewManager {
     }
 
     private fun initBottomNavigation() {
-        val navView: BottomNavigationView = binding.navView
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment_activity_main) as NavHostFragment
         val navController = navHostFragment.navController
-        navView.setupWithNavController(navController)
+        binding.navView.labelVisibilityMode = LabelVisibilityMode.LABEL_VISIBILITY_SELECTED
+
+        binding.navView.setupWithNavController(navController)
 
         // Optional: Prevent re-selection actions for the BottomNavigationView
         binding.navView.setOnItemReselectedListener { }
